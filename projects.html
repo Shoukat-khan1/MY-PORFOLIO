@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @media (max-width: 640px) {
+      .mobile-menu {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+      }
+      .mobile-menu.active {
+        display: flex;
+      }
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body class="bg-blue-50 font-sans min-h-screen flex items-center justify-center">
+  <div class="border-4 border-black shadow-lg rounded-lg max-w-5xl mx-auto p-10 bg-white mt-16">
+    <nav class="bg-blue-50 p-1 border border-black rounded-lg mb-8">
+      <div class="nav-container flex justify-between items-center">
+        <div class="flex items-center">
+          <img src="./shoukat_khan_logo.png" alt="shoukat khan pic" class="rounded-full w-16 h-16 mr-4">
+          <h1 class="text-2xl text-gray-900 font-bold">Shoukat Khan</h1>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="./index.html" class="text-gray-600 hover:text-gray-900">Home</a>
+          <a href="./Gallery.html" class="text-gray-600 hover:text-gray-900">Gallery</a>
+          <a href="./projects.html" class="text-gray-600 hover:text-gray-900">Projects</a>
+          <a href="./skills.html" class="text-gray-600 hover:text-gray-900">Skills</a>
+          <a href="./Career.html" class="text-gray-600 hover:text-gray-900">Goals</a>
+          <a href="./contact.html" class="text-gray-600 hover:text-gray-900">Contact</a>
+        </div>
+        <div class="md:hidden">
+          <button id="menu-button" class="text-gray-600 hover:text-gray-900 focus:outline-none text-2xl font-bold">
+            <img src="./download (2).png" alt="menu icon" class="w-12 h-12">
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="mobile-menu md:hidden mt-2">
+        <a href="./index.html" class="text-gray-600 hover:text-gray-900 py-2">Home</a>
+        <a href="./Gallery.html" class="text-gray-600 hover:text-gray-900 py-2">Gallery</a>
+        <a href="./projects.html" class="text-gray-600 hover:text-gray-900 py-2">Projects</a>
+        <a href="./skills.html" class="text-gray-600 hover:text-gray-900 py-2">Skills</a>
+        <a href="./Career.html" class="text-gray-600 hover:text-gray-900 py-2">Goals</a>
+        <a href="./contact.html" class="text-gray-600 hover:text-gray-900 py-2">Contact</a>
+      </div>
+    </nav>
+    <h2 class="text-2xl text-gray-900 font-bold text-center mb-8">My Projects</h2>
+
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+
+      <div class="bg-gray-100 rounded-lg p-6 border-2 border-black shadow-md shadow-md transform transition duration-300 hover:scale-105">
+        <h3 class="text-lg text-gray-800 font-semibold mb-2">Battleship game</h3>
+        <figure>
+          <img class="rounded-lg shadow-md" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrqXENOGTsAzM_BiEqFrNp1-op0tAXGnpy7A&s" alt="My Picture" />
+          <figcaption class="mt-4 text-gray-600 text-center">1ST semester pf project</figcaption>
+        </figure>
+        <p class="text-gray-600 mb-4">Battleship Game done using C++.</p>
+        <p class="text-gray-600 mb-2"><strong>Technologies Used:</strong> Cpp Gnu library</p>
+        <div class="flex justify-between">
+          <a href="https://github.com/shoukat-khan/1st-semester-project" class="text-blue-600 hover:underline">GitHub</a>
+        </div>
+      </div>
+
+      <!--PROPERTY MANAGMENT WEB APP -->
+      <div class="bg-gray-100 rounded-lg p-6 border-2 border-black shadow-md shadow-md transform transition duration-300 hover:scale-105">
+        <h3 class="text-lg text-gray-800 font-semibold mb-2">Property Managment </h3>
+        <figure>
+          <img class="rounded-lg shadow-md" src="./image.png" alt="My Picture" />
+          <figcaption class="mt-4 text-gray-600 text-center">5nd semester project</figcaption>
+        </figure>
+        <p class="text-gray-600 mb-4">Property managment app using concepts of the Mern Stack using react and express node backend supported with mongoose database. the project was in a group and my partners for the app are hashim ahmed and areeba nisar  </p>
+        <p class="text-gray-600 mb-2"><strong>Technologies Used:</strong> React, Node, Express,Mongoose </p>
+        <div class="flex justify-between">
+          <a href="https://github.com/hashim-i222478/Estate-Sphere-Property-Managment-System-" class="text-blue-600 hover:underline">GitHub</a>
+        </div>
+      </div>
+
+            <!--weather app -->
+            <div class="bg-gray-100 rounded-lg p-6 border-2 border-black shadow-md shadow-md transform transition duration-300 hover:scale-105">
+              <h3 class="text-lg text-gray-800 font-semibold mb-2">weather app </h3>
+              <figure>
+                <img class="rounded-lg shadow-md" src="web app.jpg" alt="My Picture" />
+                <figcaption class="mt-4 text-gray-600 text-center">5nd semester project</figcaption>
+              </figure>
+              <p class="text-gray-600 mb-4">weather app using concepts of the basic web dev api calling and javascript .</p>
+              <p class="text-gray-600 mb-2"><strong>Technologies Used:</strong> javascript, weather api calling, chatbot  </p>
+              <div class="flex justify-between">
+                <a href="https://github.com/Shoukat-khan1/weather-app" class="text-blue-600 hover:underline">GitHub</a>
+              </div>
+            </div>
+
+      
+
+
+
+      <div class="bg-gray-100 rounded-lg p-6 border-2 border-black shadow-md shadow-md transform transition duration-300 hover:scale-105">
+        <h3 class="text-lg text-gray-800 font-semibold mb-2">Airline Managment </h3>
+        <figure>
+          <img class="rounded-lg shadow-md" src="https://wpassets.brainstation.io/app/uploads/2020/12/13094858/Aeroplan-Air-Canada-Digital-Magazine.jpg" alt="My Picture" />
+          <figcaption class="mt-4 text-gray-600 text-center">2nd semester project</figcaption>
+        </figure>
+        <p class="text-gray-600 mb-4">Airline managment using oop concepts.</p>
+        <p class="text-gray-600 mb-2"><strong>Technologies Used:</strong> Cpp, oop</p>
+        <div class="flex justify-between">
+          <a href="https://github.com/shoukat-khan/oop_project_sem_2" class="text-blue-600 hover:underline">GitHub</a>
+        </div>
+      </div>
+
+
+      <div class="bg-gray-100 rounded-lg p-6 border-2 border-black shadow-md shadow-md transform transition duration-300 hover:scale-105" >
+        <h3 class="text-lg text-gray-800 font-semibold mb-2">Car game</h3>
+        <figure>
+          <img class="rounded-lg shadow-md" src="./semester 3 game.jpg" alt="My Picture" class ="h-4" />
+          <figcaption class="mt-4 text-gray-600 text-center">3rd semester project</figcaption>
+          </figure>
+        <p class="text-gray-600 mb-4">Car game using data structure.</p>
+        <p class="text-gray-600 mb-2"><strong>Technologies Used:</strong> C++, Data Sructure</p>
+        <div class="flex justify-between">
+          <a href="#" class="text-blue-600 hover:underline">GitHub</a>
+        </div>
+      </div>
+
+
+      <div class="bg-gray-100 rounded-lg p-6 border-2 border-black shadow-md shadow-md transform transition duration-300 hover:scale-105">
+        <h3 class="text-lg text-gray-800 font-semibold mb-2">Cafe managment system</h3>
+        <figure>
+          <img class="rounded-lg shadow-md" src="./shoukat_khan_logo.png" alt="My Picture" />
+          <figcaption class="mt-4 text-gray-600 text-center">4th semester project</figcaption>
+          </figure>
+        <p class="text-gray-600 mb-4">Cafe managment system Using SQl.</p>
+        <p class="text-gray-600 mb-2"><strong>Technologies Used:</strong> Sql, C# window form</p>
+        <div class="flex justify-between">
+          <a href="https://github.com/shoukat-khan/Cafe-managment-system" class="text-blue-600 hover:underline">GitHub</a>
+        </div>
+      </div>
+
+      <div class="bg-gray-100 rounded-lg p-6 border-2 border-black shadow-md shadow-md transform transition duration-300 hover:scale-105">
+        <h3 class="text-lg text-gray-800 font-semibold mb-2">Auto store</h3>
+        <figure>
+          <img class="rounded-lg shadow-md" src="./Autostore.jpg" alt="My Picture" class ="h-4" />
+          <figcaption class="mt-4 text-gray-600 text-center">4th semester project</figcaption>
+          </figure>
+        <p class="text-gray-600 mb-4">Auto Store done using java springboot.</p>
+        <p class="text-gray-600 mb-2"><strong>Technologies Used:</strong> Html, Java springboot</p>
+        <div class="flex justify-between">
+          <a href="#" class="text-blue-600 hover:underline">GitHub</a>
+
+        </div>
+      </div>
+
+    </div>
+    <footer class="bg-blue-50 text-gray-400 py-4 mt-4">
+      <div class="mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+    <p class="text-center md:text-left">Designed by <strong class="text-gray-600 font-semibold">Shoukat Khan</strong></p>
+
+    <p class="text-center md:text-right mt-2 md:mt-0"><span class ="text-gray-600 font-semibold"> &copy;</span> 2024 Shoukat Khan. All Rights Reserved.</p>
+</div>
+</footer>
+  </div>
+  
+  <script>
+    document.getElementById("menu-button").addEventListener("click", function() {
+      document.getElementById("mobile-menu").classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
